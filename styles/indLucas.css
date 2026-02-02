@@ -324,8 +324,6 @@ footer {
     gap: 30px;
     padding: 0 20px;
     margin-top: auto;
-    
-    
 }
 
 .footer-botao-div{
@@ -354,4 +352,131 @@ footer button{
     height: 40px;
     border-radius: 50%;
     object-fit: contain;
+}
+
+@media (max-width: 1435px) {
+    .hobbies-h3, .top5-h3{
+        text-align: center;
+    }
+}
+
+@media (max-width: 850px) {
+    .section-bio {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-bio-img{
+        margin-bottom: 24px;
+    }
+
+    .section-bio-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        padding-left: 14%
+    }
+
+    .feedbacks button {
+        align-self: center;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 675px) {
+
+    h1{
+        font-size: 32px;
+        margin-left: 0;
+    }
+    .links-nav{
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .section-bio {
+        height: 570px;
+    }
+
+    .hobbies-and-feedbacks{
+        min-height: calc(100vh - 230px);
+        height: auto;
+    }
+
+    .hobbies-list, .top5-list{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hobbies-list li, .top5-list li{
+        margin: 4px 2px;
+    }
+}
+
+@media (max-width: 390px) {
+    .section-bio {
+        height: 650px;
+    }
+
+    .section-bio-img figure img{
+        max-height: 210px;
+        min-height: 160px;
+        max-width: 210px;
+        min-width: 160px;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .section-bio-content{
+        width: 100vw;
+        padding-left: 8%;
+        padding-right: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-bio-content{
+        padding-left: 10%;
+        padding-right: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-bio-content{
+        padding-left: 10%;
+        padding-right: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        width: 100%;
+        min-height: 100px;
+        background-color: var(--azul-marinho);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 0 20px;
+        margin-top: auto;
+    }
+
+    .footer-botao-div{
+        padding-top: 24px;
+        margin: auto;
+    }
+
+    .footer-logo {
+        padding-bottom: 4px;
+    }
+
 }
